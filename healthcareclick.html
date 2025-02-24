@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .service-item {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        .service-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .service-item a {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .service-item a:hover {
+            background-color: #45a049;
+        }
+
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .service-item {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Choose a Healthcare Service</h1>
+    <div class="service-list">
+        <div class="service-item">
+            <h3>Orthopedics</h3>
+            <a href="orthopedics.html">Book Appointment</a>
+        </div>
+
+        <div class="service-item">
+            <h3>Gynecology</h3>
+            <a href="gynecology.html">Book Appointment</a>
+        </div>
+
+        <div class="service-item">
+            <h3>Dental</h3>
+            <a href="dental.html">Book Appointment</a>
+        </div>
+
+        <div class="service-item">
+            <h3>Cardiology</h3>
+            <a href="cardiology.html">Book Appointment</a>
+        </div>
+
+        <div class="service-item">
+            <h3>Therapist</h3>
+            <a href="therapist.html">Book Appointment</a>
+        </div>
+    </div>
+
+</body>
+</html>
